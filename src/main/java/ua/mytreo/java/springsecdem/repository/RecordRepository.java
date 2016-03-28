@@ -7,6 +7,6 @@ import ua.mytreo.java.springsecdem.entity.Record;
 
 public interface RecordRepository extends JpaRepository<Record, Long> {
 
-    @Query("select * from TABLE_1 b where b.num_1 = :num")
+    @Query("select b from TABLE_1 b where b.num_1 = :num")
     Record findByNum(@Param("num") Integer num);
 }

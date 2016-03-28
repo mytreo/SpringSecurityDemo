@@ -22,9 +22,9 @@ public class MainController {
         return "login";
     }
 
-    @RequestMapping(value ="/test",method = RequestMethod.GET)
-    public String testPage(Model model){
-        return "test";
+    @RequestMapping(value ="/userPages",method = RequestMethod.GET)
+    public String userPagesPage(Model model){
+        return "userPages";
     }
 
 }
