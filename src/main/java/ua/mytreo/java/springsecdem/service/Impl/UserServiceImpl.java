@@ -1,8 +1,9 @@
-package ua.mytreo.java.springsecdem.service;
+package ua.mytreo.java.springsecdem.service.impl;
 
 
 import org.springframework.stereotype.Service;
 import ua.mytreo.java.springsecdem.entity.User;
+import ua.mytreo.java.springsecdem.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

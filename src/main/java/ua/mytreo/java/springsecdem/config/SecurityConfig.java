@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import ua.mytreo.java.springsecdem.service.UserDetailsServiceImpl;
+import ua.mytreo.java.springsecdem.service.impl.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity

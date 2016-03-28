@@ -1,10 +1,22 @@
 package ua.mytreo.java.springsecdem.entity;
 
 
-public class User {
+import ua.mytreo.java.springsecdem.entity.enums.UserRoleEnum;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "User")
+public class User {
+    @Id
+    private long id;
+    @Column(name = "login")
     private String login;
+    @Column(name = "password")
     private String password;
+    @Column(name = "role")
+    @Enumerated(EnumType.STRING)
+    private UserRoleEnum role;
 
     public User(String login, String password) {
         this.login = login;
@@ -12,6 +24,10 @@ public class User {
     }
 
     public User() {
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getLogin() {
@@ -29,4 +45,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public UserRoleEnum getRole() {
+        return role;
+    }
+
+    public void setRole(UserRoleEnum role) {
+        this.role = role;
+    }
+
+
 }

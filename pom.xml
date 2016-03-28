@@ -13,8 +13,11 @@
     <properties>
         <spring.securiry>3.2.0.RELEASE</spring.securiry>
         <spring.mvc>4.0.0.RELEASE</spring.mvc>
+        <spring.data>1.9.4.RELEASE</spring.data>
         <javax.servlet>3.0.1</javax.servlet>
         <jstl.version>1.2</jstl.version>
+        <hb.manager>5.1.0.Final</hb.manager>
+        <ojdbc14.version>10.2.0.4.0</ojdbc14.version>
     </properties>
 
     <build>
@@ -39,6 +42,24 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>${ojdbc14.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring.data}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hb.manager}</version>
+        </dependency>
+
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>

@@ -19,6 +19,7 @@ public class Initializer implements WebApplicationInitializer {
         // регистрация конфигураций в Spring контексте
         ctx.register(WebAppConfig.class);
         ctx.register(SecurityConfig.class);
+        ctx.register(DataConfig.class);
         servletContext.addListener(new ContextLoaderListener(ctx));
 
         ctx.setServletContext(servletContext);
